@@ -1,0 +1,30 @@
+site_name: GasFree Documentation
+site_url: https://docs.gasfree.io/
+
+theme:
+    name: material
+    custom_dir: overrides
+    features:
+        - navigation.sections
+        - toc.integrate
+        - search.highlight
+        - search.suggest
+        - content.code.annotate
+        - content.tooltips
+
+extra_css:
+    - stylesheets/extra.css
+
+plugins:
+    - search
+
+markdown_extensions:
+    - admonition
+    - codehilite
+    - toc:
+          permalink: true
+          toc_depth: 3
+    - pymdownx.arithmatex
+    - pymdownx.tilde
+    - pymdownx.tasklist
+    - pymdownx.superfences
