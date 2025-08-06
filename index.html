@@ -1,0 +1,981 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://docs.gasfree.io/">
+      
+      
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.8">
+    
+    
+      
+        <title>GasFree Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.8608ea7d.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="stylesheets/extra.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#gasfree-developer-documentation" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="GasFree Documentation" class="md-header__button md-logo" aria-label="GasFree Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            GasFree Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              GasFree Developer Documentation
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="GasFree Documentation" class="md-nav__button md-logo" aria-label="GasFree Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    GasFree Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    GasFree Developer Documentation
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    GasFree Developer Documentation
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item ">
+  <a href="#1-overview" class="md-nav__link" >
+    <span class="md-ellipsis">
+      1. Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item ">
+  <a href="#2-authorization-process" class="md-nav__link" >
+    <span class="md-ellipsis">
+      2. Authorization Process
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item ">
+  <a href="#3-signature-algorithm-and-provider-endpoint" class="md-nav__link" >
+    <span class="md-ellipsis">
+      3. Signature Algorithm and Provider Endpoint
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item ">
+  <a href="#4-notes" class="md-nav__link" >
+    <span class="md-ellipsis">
+      4. Notes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item has-children">
+  <a href="#5-apis" class="md-nav__link" onclick="toggleChildren(event)" aria-expanded="false">
+    <span class="md-ellipsis">
+      5. APIs
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. APIs" hidden>
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item ">
+  <a href="#api-authentication" class="md-nav__link" >
+    <span class="md-ellipsis">
+      API Authentication
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item ">
+  <a href="#api-format-definition" class="md-nav__link" >
+    <span class="md-ellipsis">
+      API Format Definition
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item ">
+  <a href="#get-apiv1configtokenall" class="md-nav__link" >
+    <span class="md-ellipsis">
+      GET /api/v1/config/token/all
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item ">
+  <a href="#get-apiv1configproviderall" class="md-nav__link" >
+    <span class="md-ellipsis">
+      GET /api/v1/config/provider/all
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item ">
+  <a href="#get-apiv1addressaccountaddress" class="md-nav__link" >
+    <span class="md-ellipsis">
+      GET /api/v1/address/{accountAddress}
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item ">
+  <a href="#post-apiv1gasfreesubmit" class="md-nav__link" >
+    <span class="md-ellipsis">
+      POST /api/v1/gasfree/submit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item ">
+  <a href="#get-apiv1gasfreetraceid" class="md-nav__link" >
+    <span class="md-ellipsis">
+      GET /api/v1/gasfree/{traceId}
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="gasfree-developer-documentation">GasFree Developer Documentation<a class="headerlink" href="#gasfree-developer-documentation" title="Permanent link">&para;</a></h1>
+<h2 id="1-overview">1. Overview<a class="headerlink" href="#1-overview" title="Permanent link">&para;</a></h2>
+<p>GasFree aims to provide users with a TRC-20/ERC-20 transfer solution that does not require a native token to pay for transaction gas fees. It specifically includes four roles: GasFree accounts, Service-Providers, wallets, and users, as shown in Figure 1. below.</p>
+<p><img alt="overview" src="https://raw.githubusercontent.com/gasfree/gasfree-docs/main/images/overview.png" /></p>
+<p><strong>GasFree Account</strong>: Generated according to a specific algorithm. Its permissions are controlled by the user's EOA (Externally Owned Account) address. The user can sign a signature to authorize GasFree transfer of this account.</p>
+<p><strong>Service-Provider</strong>: The GasFree service-provider is responsible for collecting users' GasFree transfer authorizations, submitting them to the blockchain, and paying the Gas fees on behalf of the users. The Service-Provider may charge a certain handling fee after the transaction is completed.</p>
+<p><strong>Wallet</strong>: After connecting to the GasFree service, the wallet provides end-users with interface functions such as fund inquiry for GasFree accounts and signature for transfer authorization.</p>
+<h2 id="2-authorization-process">2. Authorization Process<a class="headerlink" href="#2-authorization-process" title="Permanent link">&para;</a></h2>
+<p>Integrating GasFree into the wallet involves processes such as constructing transfer authorization, signing the transfer authorization, and the provider submitting the authorization to the blockchain on behalf of the user. For detailed information about the Provider API interface, please refer to Section 5 of this document. After the integration, the main interaction process is as follows:</p>
+<p><strong>1. Prerequisite</strong>:</p>
+<ul>
+<li>
+<p>The Service-Provider supports GasFree transfers for multiple types of tokens. Call <a href="#get-/api/v1/config/token/all">/api/v1/config/token/all</a> to obtain the list of supported tokens.</p>
+</li>
+<li>
+<p>When a token that the Provider does not currently support is transferred into a GasFree account, the user uses the withdrawal page provided by GasFree official to withdraw the token to their EOA (Externally Owned Account) address. The link to the withdrawal page is: <a href="https://gasfree.io/withdraw">https://gasfree.io/withdraw</a></p>
+</li>
+<li>
+<p>GasFree supports multiple Service-Providers. Just make a call to <a href="#get-/api/v1/config/provider/all">/api/v1/config/provider/all</a> to obtain the list of available Service-Providers.</p>
+</li>
+<li>
+<p>The GasFree account is in an inactive state by default. An inactive GasFree account will be automatically activated during the first Gasfree transfer. When activating the GasFree account, an additional `activation fee` will be charged. For subsequent GasFree transfer authorizations, only the `transfer fee` will be charged.</p>
+</li>
+</ul>
+<p><strong>2. Preparation</strong>:</p>
+<ul>
+<li>When a user conducts a GasFree transfer authorization, first call <a href="#get-/api/v1/address/{accountaddress}">/api/v1/address/{accountAddress}</a> to query his/her GasFree account info, including status, balance, and current nonce. Based on this info, construct a GasFree transfer authorization.</li>
+</ul>
+<p><strong>3. Sign authorization</strong>:</p>
+<ul>
+<li>The signature algorithm for GasFree transfer authorization is designed to support subsequent upgrades of the signature algorithm. The signature algorithm of the current version is compatible with the EIP712 specification. For the specific signature algorithm of the authorization, please refer to Section 3.2.</li>
+</ul>
+<p><strong>4. Submit authorization</strong>:</p>
+<ul>
+<li>Use <a href="#post-/api/v1/gasfree/submit">/api/v1/gasfree/submit</a> to send the signed GasFree transfer authorization to the Service-Provider.</li>
+</ul>
+<p><strong>5. Handling of provider response</strong>:</p>
+<ul>
+<li>
+<p>After receiving the GasFree transfer authorization submitted by the user, the provider will conduct a verification and immediately return the verification result to the wallet. The wallet should handle the response from the Provider:</p>
+</li>
+<li>
+<p>If successful, notify the user the authorization verification has passed, and include a globally unique authorization <strong>traceId</strong>. Subsequently, the on-chain status of this authorization can be tracked based on this <strong>traceId</strong>.</p>
+</li>
+<li>
+<p>If failed, notify the user of the failure, stating that the authorization has been discarded and this request will not trigger an actual transaction on the blockchain.</p>
+</li>
+</ul>
+<p><strong>6. Monitoring of the transfer authorization</strong>:</p>
+<ul>
+<li>Call <a href="#get-/api/v1/gasfree/{traceid}">/api/v1/gasfree/{tranceId}</a> to query the status of the GasFree transfer authorization.</li>
+</ul>
+<h2 id="3-signature-algorithm-and-provider-endpoint">3. Signature Algorithm and Provider Endpoint<a class="headerlink" href="#3-signature-algorithm-and-provider-endpoint" title="Permanent link">&para;</a></h2>
+<h4 id="31-parameters">3.1 Parameters<a class="headerlink" href="#31-parameters" title="Permanent link">&para;</a></h4>
+<p>The GasFree transfer authorization involves the following parameters. Their values on the TRON mainnet and the Nile testnet are shown in Table 1.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parameter</th>
+<th style="text-align: left;">TRON - mainnet</th>
+<th style="text-align: left;">TRON - Nile testnet</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">chainId</td>
+<td style="text-align: left;">​​728126428</td>
+<td style="text-align: left;">3448148188</td>
+</tr>
+<tr>
+<td style="text-align: left;">verifyingContract</td>
+<td style="text-align: left;">TFFAMQLZybALaLb4uxHA9RBE7pxhUAjF3U</td>
+<td style="text-align: left;">THQGuFzL87ZqhxkgqYEryRAd7gqFqL5rdc</td>
+</tr>
+</tbody>
+</table>
+<p>Table 1. GasFree Transfer Authorization Parameters</p>
+<h4 id="32-authorization-construction-and-signature">3.2 Authorization Construction and Signature<a class="headerlink" href="#32-authorization-construction-and-signature" title="Permanent link">&para;</a></h4>
+<p><strong>General structure</strong></p>
+<ul>
+<li><strong>MessageDomain:</strong></li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">Permit712MessageDomain</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;GasFreeController&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">version</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;V1.0.0&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">chainId</span><span class="o">:</span><span class="w"> </span><span class="mf">3448148188</span><span class="w"> </span><span class="c1">// tronWeb.toDecimal(&#39;0xcd8690dc&#39;),</span>
+<span class="w">  </span><span class="nx">verifyingContract</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;THQGuFzL87ZqhxkgqYEryRAd7gqFqL5rdc&#39;</span>
+<span class="p">}</span>
+</code></pre></div>
+<div class="codehilite"><pre><span></span><code>Field description:
+</code></pre></div>
+
+<ul>
+<li>
+<p>token: address of transferring token</p>
+</li>
+<li>
+<p>name: ‘GasFreeController’, fixed value</p>
+</li>
+<li>version: ‘V1.0.0’, fixed value</li>
+<li>chainId: chainId in decimal, please refer to section 3.1</li>
+<li>
+<p>verifyingContract: GasFreeController contract address, please refer to section 3.1</p>
+</li>
+<li>
+<p><strong>MessageTypes: fixed value</strong></p>
+</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">Permit712MessageTypes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">PermitTransfer</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;token&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">type</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;address&quot;</span><span class="w"> </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;serviceProvider&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">type</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;address&quot;</span><span class="w"> </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;user&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">type</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;address&quot;</span><span class="w"> </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;receiver&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">type</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;address&quot;</span><span class="w"> </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;value&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">type</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;uint256&quot;</span><span class="w"> </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;maxFee&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">type</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;uint256&quot;</span><span class="w"> </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;deadline&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">type</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;uint256&quot;</span><span class="w"> </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;version&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">type</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;uint256&quot;</span><span class="w"> </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;nonce&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">type</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;uint256&quot;</span><span class="w"> </span><span class="p">},</span>
+<span class="w">  </span><span class="p">],</span>
+<span class="p">};</span>
+</code></pre></div>
+<ul>
+<li><strong>Message body:</strong></li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">message</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">token</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;TXYZopYRdj2D9XRtbG411XZZ3kM5VkAeBf&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">serviceProvider</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;TKtWbdzEq5ss9vTS9kwRhBp5mXmBfBns3E&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">user</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;THvMiWQeVPGEMuBtAnuKn2QpuSjqjrGQGu&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">receiver</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;TMDKznuDWaZwfZHcM61FVFstyYNmK6Njk1&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">value</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;90000000&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">maxFee</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;20000000&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">deadline</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;1728638679&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">version</span><span class="o">:</span><span class="w"> </span><span class="mf">1</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">nonce</span><span class="o">:</span><span class="w"> </span><span class="mf">0</span><span class="p">,</span>
+<span class="p">};</span>
+</code></pre></div>
+<div class="codehilite"><pre><span></span><code>Field description:
+</code></pre></div>
+
+<ul>
+<li>token: address of transferring token</li>
+<li>provider: address of Service-Provider</li>
+<li>user: user’s EOA address, not GasFree address</li>
+<li>receiver: recipient address of the transfer</li>
+<li>value: amount of the transfer, like 90 USDT equals 90 * 10^6</li>
+<li>maxFee: maximum fee limit (transfer fee + activation fee), the smallest unit; for example, 20 USDT equals 20 * 10^6</li>
+<li>deadline: expiration timestamp of the transfer, the unit is seconds; for example, Date.now() / 1000</li>
+<li>version: version of the signature, the current version is 1</li>
+<li>nonce: nonce value of the transfer authorization; for example, 0</li>
+</ul>
+<p><strong>Sign with Wallet</strong></p>
+<p>Using the above structure, you can call the TRON wallet to sign the TIP-712 Message, which will provide the required <code>sig</code> parameter.</p>
+<p><strong>TronLink example:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">signature</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nb">window</span><span class="p">.</span><span class="nx">tron</span><span class="p">.</span><span class="nx">tronWeb</span><span class="p">.</span><span class="nx">trx</span><span class="p">.</span><span class="nx">_signTypedData</span><span class="p">(</span><span class="nx">Permit712MessageDomain</span><span class="p">,</span><span class="w"> </span><span class="nx">Permit712MessageTypes</span><span class="p">,</span><span class="w"> </span><span class="nx">message</span><span class="p">);</span><span class="w"> </span><span class="c1">// remove 0x</span>
+</code></pre></div>
+<h4 id="33-endpoint">3.3 Endpoint<a class="headerlink" href="#33-endpoint" title="Permanent link">&para;</a></h4>
+<p>Wallets/users can interact with the Provider through the following endpoint, including submitting GasFree transfer authorizations, querying subsequent statuses, etc. They can also withdraw tokens that are not yet supported by the Providers to the user's EOA (Externally Owned Account) address.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Services</th>
+<th style="text-align: left;">TRON - Mainnet</th>
+<th style="text-align: left;">TRON - Nile testnet</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">provider-#1</td>
+<td style="text-align: left;"><a href="https://open.gasfree.io/tron/">https://open.gasfree.io/tron/</a></td>
+<td style="text-align: left;"><a href="https://open-test.gasfree.io/nile/">https://open-test.gasfree.io/nile/</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">GasFree website</td>
+<td style="text-align: left;"><a href="https://gasfree.io">https://gasfree.io</a></td>
+<td style="text-align: left;"><a href="https://test.gasfree.io">https://test.gasfree.io</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Assets Withdrawal</td>
+<td style="text-align: left;"><a href="https://gasfree.io/withdraw">https://gasfree.io/withdraw</a></td>
+<td style="text-align: left;"><a href="https://test.gasfree.io/withdraw">https://test.gasfree.io/withdraw</a></td>
+</tr>
+</tbody>
+</table>
+<p>Table 2. Endpoints of the Services</p>
+<p>Note: Currently, GasFree only provides services in the TRON network and can be extended to Ethereum and various EVM-compatible chains in the future.</p>
+<h4 id="34-faucet">3.4 Faucet<a class="headerlink" href="#34-faucet" title="Permanent link">&para;</a></h4>
+<p>Nile testnet faucet: <a href="https://nileex.io/join/getJoinPage">https://nileex.io/join/getJoinPage</a>; developers can obtain TRX and USDT at this page for test purposes.</p>
+<h2 id="4-notes">4. Notes<a class="headerlink" href="#4-notes" title="Permanent link">&para;</a></h2>
+<p><strong>1. It is not recommended that the testnet environment be provided to users.</strong></p>
+<p><strong>The GasFree environment on the TRON testnet is only available for developer teams to conduct testing and debugging during integration.</strong></p>
+<p><strong>It is strongly recommended to close the entrance to the GasFree test environment for ordinary users after the official launch to prevent users from filling in the wrong recipient addresses and incurring asset losses.</strong></p>
+<p><strong>2. It is recommended to conduct balance and status verification before submitting transfer authorization. For details, please refer to the definition of <a href="#get-/api/v1/address/{accountaddress}">GasFree account interface</a>.</strong></p>
+<p><strong>Unless otherwise specified, all references to asset balances and amounts in this document are in the smallest unit.</strong></p>
+<h2 id="5-apis">5. APIs<a class="headerlink" href="#5-apis" title="Permanent link">&para;</a></h2>
+<h3 id="api-authentication">API Authentication<a class="headerlink" href="#api-authentication" title="Permanent link">&para;</a></h3>
+<p>After applying for access to the GasFree project, the access party will receive a pair of keys: <strong>API Key</strong> and <strong>API Secret</strong>. This key pair is used to sign API requests. Please make sure to keep the API Secret properly. The GasFree server verifies the requests, and the signature information is transmitted through the HTTP header.</p>
+<p>Users can apply for API Key and API Secret at <a href="https://developer.gasfree.io/">GasFree Developers Center</a> once verified backstage, please send an email with your User Id to admin@gasfree.io if your user is not verified in time.</p>
+<p><strong>HTTP header definition:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="s2">&quot;Timestamp&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">1731912286</span><span class="p">,</span><span class="w"> </span><span class="c1">// unit: second</span>
+<span class="w">  </span><span class="s2">&quot;Authorization&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;ApiKey {api_key}:{signature}&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+<p><strong>API Signature and Authentication</strong></p>
+<ol>
+<li>Construct the string to be signed: including the request method, request path, and timestamp.</li>
+<li>Calculate the signature: Use the HMAC-SHA256 algorithm and the API secret to perform a hash operation on the string to be signed, and then perform base64 encoding on the result.</li>
+<li>Add the signature to the request header.</li>
+</ol>
+<p><strong>Example:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">hmac</span>
+<span class="kn">import</span> <span class="nn">hashlib</span>
+<span class="kn">import</span> <span class="nn">base64</span>
+<span class="kn">import</span> <span class="nn">time</span>
+<span class="kn">import</span> <span class="nn">requests</span>
+
+<span class="n">API_KEY</span> <span class="o">=</span> <span class="s1">&#39;YOUR_API_KEY&#39;</span>
+<span class="n">API_SECRET</span> <span class="o">=</span> <span class="s1">&#39;YOUR_API_SECRET&#39;</span>
+
+<span class="n">method</span> <span class="o">=</span> <span class="s1">&#39;GET&#39;</span>
+
+<span class="o">//</span> <span class="n">If</span> <span class="n">running</span> <span class="ow">in</span> <span class="n">test</span> <span class="n">env</span><span class="p">(</span><span class="n">nile</span> <span class="n">testnet</span><span class="p">)</span><span class="err">，</span><span class="n">path</span> <span class="n">prefix</span> <span class="n">should</span> <span class="n">be</span> <span class="s1">&#39;/nile&#39;</span>
+<span class="o">//</span> <span class="n">If</span> <span class="n">running</span> <span class="ow">in</span> <span class="n">mainnet</span> <span class="p">(</span><span class="n">mainnet</span><span class="p">),</span> <span class="n">path</span> <span class="n">prefix</span> <span class="n">should</span> <span class="n">be</span> <span class="s1">&#39;/tron&#39;</span>
+<span class="n">path</span> <span class="o">=</span> <span class="s1">&#39;/nile/api/v1/config/token/all&#39;</span>
+<span class="n">timestamp</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">())</span>
+<span class="n">message</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">method</span><span class="si">}{</span><span class="n">path</span><span class="si">}{</span><span class="n">timestamp</span><span class="si">}</span><span class="s1">&#39;</span>
+<span class="n">signature</span> <span class="o">=</span> <span class="n">base64</span><span class="o">.</span><span class="n">b64encode</span><span class="p">(</span>
+    <span class="n">hmac</span><span class="o">.</span><span class="n">new</span><span class="p">(</span>
+        <span class="n">API_SECRET</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">),</span>
+        <span class="n">message</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">),</span>
+        <span class="n">hashlib</span><span class="o">.</span><span class="n">sha256</span>
+        <span class="p">)</span><span class="o">.</span><span class="n">digest</span><span class="p">()</span>
+    <span class="p">)</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span>
+
+<span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;https://test-nile.gasfree.io&#39;</span> <span class="o">+</span> <span class="n">path</span>
+<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;Timestamp&#39;</span><span class="p">:</span> <span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">timestamp</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Authorization&#39;</span><span class="p">:</span> <span class="sa">f</span><span class="s1">&#39;ApiKey </span><span class="si">{</span><span class="n">API_KEY</span><span class="si">}</span><span class="s1">:</span><span class="si">{</span><span class="n">signature</span><span class="si">}</span><span class="s1">&#39;</span>
+<span class="p">}</span>
+
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">())</span>
+</code></pre></div>
+<h3 id="api-format-definition">API Format Definition<a class="headerlink" href="#api-format-definition" title="Permanent link">&para;</a></h3>
+<p>When the service runs normally, the HTTP code returned by the API is `200`. Parameter errors or runtime errors are reflected in the HTTP body.</p>
+<p><strong>HTTP body definition:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="s2">&quot;code&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">200</span><span class="p">,</span><span class="w"> </span><span class="c1">// indicates if request returns normally, 200 means normal, 400 indicates failure due to input error, and 500 indicates failure due to runtime error</span>
+<span class="w">  </span><span class="s2">&quot;reason&quot;</span><span class="o">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w"> </span><span class="c1">// exception name</span>
+<span class="w">  </span><span class="s2">&quot;message&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">// exception info, usually a combined string</span>
+<span class="w">  </span><span class="s2">&quot;data&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="w"> </span><span class="c1">//  return data of the API interface; otherwise, it is null</span>
+<span class="p">}</span>
+</code></pre></div>
+<p><strong>Error return example:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="s2">&quot;code&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">400</span><span class="p">,</span>
+<span class="w">  </span><span class="s2">&quot;reason&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;GasFreeAddressNotFoundException&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="s2">&quot;message&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;123&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="s2">&quot;data&quot;</span><span class="o">:</span><span class="w"> </span><span class="kc">null</span>
+<span class="p">}</span>
+</code></pre></div>
+<p><strong>Successful return example:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="s2">&quot;code&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">200</span><span class="p">,</span>
+<span class="w">  </span><span class="s2">&quot;reason&quot;</span><span class="o">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">  </span><span class="s2">&quot;message&quot;</span><span class="o">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">  </span><span class="s2">&quot;data&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="s2">&quot;tokens&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">      </span><span class="p">{</span>
+<span class="w">        </span><span class="s2">&quot;tokenAddress&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;TXYZopYRdj2D9XRtbG411XZZ3kM5VkAeBf&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;createdAt&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;2024-09-10T09:46:24.801+00:00&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;updatedAt&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;2024-09-11T06:57:10.244+00:00&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;activateFee&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">10000000</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;transferFee&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">10000000</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;supported&quot;</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;symbol&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;USDT&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;decimal&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">6</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">]</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="get-apiv1configtokenall">GET /api/v1/config/token/all<a class="headerlink" href="#get-apiv1configtokenall" title="Permanent link">&para;</a></h3>
+<p>The complete request URL for the services provided by Provider #1 on the TRON mainnet is: <a href="https://open.gasfree.io/tron/api/v1/config/token/all">https://open.gasfree.io/tron/api/v1/config/token/all</a></p>
+<p>Get the contract list of all supported tokens.</p>
+<ul>
+<li><strong>Request parameters</strong>: None</li>
+<li><strong>Return</strong>: `tokens`, contain the contract list of all supported tokens.<br />
+  The field description of the token structure:</li>
+<li>tokenAddress: token contract address</li>
+<li>activateFee: the activation handling fee paid in the transfer token, is measured in the smallest unit of that token; this value can be adjusted according to actual circumstances later.</li>
+<li>transferFee: the transfer fee, paid in the transfer currency, is measured in the smallest unit of that token; this value can be adjusted according to actual circumstances later.</li>
+<li>symbol: token name</li>
+<li>decimal: token precision</li>
+</ul>
+<p><strong>Return example:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="s2">&quot;code&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">200</span><span class="p">,</span>
+<span class="w">  </span><span class="s2">&quot;reason&quot;</span><span class="o">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">  </span><span class="s2">&quot;message&quot;</span><span class="o">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">  </span><span class="s2">&quot;data&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="s2">&quot;tokens&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">      </span><span class="p">{</span>
+<span class="w">        </span><span class="s2">&quot;tokenAddress&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;TXYZopYRdj2D9XRtbG411XZZ3kM5VkAeBf&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;createdAt&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;2024-10-09T08:14:12.560+00:00&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;updatedAt&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;2024-10-09T08:14:12.560+00:00&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;activateFee&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">10000000</span><span class="p">,</span><span class="w"> </span><span class="c1">// stands for 10 USDT</span>
+<span class="w">        </span><span class="s2">&quot;transferFee&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">10000000</span><span class="p">,</span><span class="w"> </span><span class="c1">// stands for 10 USDT</span>
+<span class="w">        </span><span class="s2">&quot;supported&quot;</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;symbol&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;USDT&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;decimal&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">6</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">]</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="get-apiv1configproviderall">GET /api/v1/config/provider/all<a class="headerlink" href="#get-apiv1configproviderall" title="Permanent link">&para;</a></h3>
+<p>Get the list of all supported service providers.</p>
+<ul>
+<li><strong>Request parameters</strong>: None</li>
+<li><strong>Return</strong>: `providers`, contains the list of all available Service-Providers.<br />
+  The field description of the provider structure:</li>
+<li>address: address of the Service-Provider</li>
+<li>name: Provider’s name</li>
+<li>icon: Provider’s icon</li>
+<li>website: Provider’s website</li>
+<li>config: system parameters of the Provider<ul>
+<li>maxPendingTransfer: the maximum number of transfer authorizations waiting to be on chain that users are allowed to submit; if the number exceeds this limit, an error will be reported upon submission, and users must wait until the previous transfer authorizations are successfully on chain before they can continue to send new ones. (Currently, only one transfer authorization in the "pending" status is supported for the same account.)</li>
+<li>minDeadlineDuration: the minimum deadline interval; transfer authorizations with a deadline less than this value from the current time will be rejected; the unit is seconds.</li>
+<li>maxDeadlineDuration: the maximum deadline interval; transfer authorizations with a deadline more than this value from the current time will be rejected; the unit is seconds.</li>
+<li>defaultDeadlineDuration: default deadline interval, recommended.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Return example:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="s2">&quot;code&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">200</span><span class="p">,</span>
+<span class="w">  </span><span class="s2">&quot;reason&quot;</span><span class="o">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">  </span><span class="s2">&quot;message&quot;</span><span class="o">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">  </span><span class="s2">&quot;data&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="s2">&quot;providers&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">      </span><span class="p">{</span>
+<span class="w">        </span><span class="s2">&quot;address&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;TQ6qStrS2ZJ96gieZJC8AurTxwqJETmjfp&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Provider-1&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;icon&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;website&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;config&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">          </span><span class="s2">&quot;maxPendingTransfer&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">1</span><span class="p">,</span>
+<span class="w">          </span><span class="s2">&quot;minDeadlineDuration&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">60</span><span class="p">,</span>
+<span class="w">          </span><span class="s2">&quot;maxDeadlineDuration&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">600</span><span class="p">,</span>
+<span class="w">          </span><span class="s2">&quot;defaultDeadlineDuration&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">180</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">]</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="get-apiv1addressaccountaddress">GET /api/v1/address/{accountAddress}<a class="headerlink" href="#get-apiv1addressaccountaddress" title="Permanent link">&para;</a></h3>
+<p>Query the relevant information of the user's GasFree account, including whether it is activated, the nonce value, the supported tokens, and assets.</p>
+<p><strong>1. Query the latest assets of the GasFree account on-chain. Combine the “frozen” value provided by this interface to limit the maximum transfer-out amount of users. Otherwise, it may lead to submission failures or transfer failures.</strong></p>
+<ul>
+<li><strong>Request parameters</strong>: `accountAddress` is the user's EOA address.</li>
+<li><strong>Return</strong>: asset info of the user's GasFree account.<br />
+  Field description:</li>
+<li>accountAddress: user’s EOA address</li>
+<li>gasFreeAddress: user's GasFree account address</li>
+<li>active: activation status of the GasFree account</li>
+<li>nonce: the recommended nonce value for the next GasFree Transfer; since there may be transfer authorization waiting to be on-chain, the nonce on the chain may not necessarily be applicable; the back end will provide the recommended nonce value by comprehensively considering the situations on the chain and in the queue.</li>
+<li><strong>allowSubmit: whether users are currently allowed to continue submitting transfer authorization.</strong></li>
+<li>assets: details of the assets that users are processing through the GasFree service provider.<ul>
+<li>tokenAddress: contract address of the token</li>
+<li>tokenSymbol: token name</li>
+<li>activateFee: the activation handling fee for this token, is measured in the smallest unit of this token.</li>
+<li>transferFee: the transfer fee for this token, is measured in the smallest unit of this token.</li>
+<li>decimal: precision of the token</li>
+<li>frozen: current amount of the GasFree transfer in progress, including the fees</li>
+</ul>
+</li>
+</ul>
+<p><strong>Return example:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="s2">&quot;code&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">200</span><span class="p">,</span>
+<span class="w">  </span><span class="s2">&quot;reason&quot;</span><span class="o">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">  </span><span class="s2">&quot;message&quot;</span><span class="o">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">  </span><span class="s2">&quot;data&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="s2">&quot;accountAddress&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;TKtWbdzEq5ss9vTS9kwRhBp5mXmBfBns3E&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;gasFreeAddress&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;TLGVf7MRsLG7XxBkJKy8wnCVcDnAeXYNCb&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;active&quot;</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;nonce&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">1</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;allow_submit&quot;</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;assets&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">      </span><span class="p">{</span>
+<span class="w">        </span><span class="s2">&quot;tokenAddress&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;TXYZopYRdj2D9XRtbG411XZZ3kM5VkAeBf&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;tokenSymbol&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;USDT&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;activateFee&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">10000000</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;transferFee&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">10000000</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;decimal&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">6</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;frozen&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">0</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">]</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="post-apiv1gasfreesubmit">POST /api/v1/gasfree/submit<a class="headerlink" href="#post-apiv1gasfreesubmit" title="Permanent link">&para;</a></h3>
+<p>Initiate a GasFree transfer authorization.</p>
+<ul>
+<li><strong>Request parameters</strong>:</li>
+<li>requestId: request id in uuid4 format, not mandatory, for issue checking purposes</li>
+<li>token: address of the token for transfer</li>
+<li>Provider: address of the service-provider</li>
+<li>user: user's EOA address, not the GasFree address</li>
+<li>receiver: recipient address of the transfer</li>
+<li>value: amount for the transfer</li>
+<li>maxFee: the maximum fee limit (transfer fee + activation fee)</li>
+<li>deadline: the expiration timestamp of this transfer, in seconds</li>
+<li>version: signature version of transfer authorization</li>
+<li>nonce: nonce value of this transfer authorization</li>
+<li>sig: user's signature of the GasFree transfer authorization</li>
+</ul>
+<p><strong>Request example:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="s2">&quot;requestId&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;1e0a9e0e-7a91-48e8-9fa1-a473347f54ec&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="s2">&quot;token&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;TXYZopYRdj2D9XRtbG411XZZ3kM5VkAeBf&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="s2">&quot;provider&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;TCETRh3aED4kdkaYQY7CcxeTJtrQvwBpNT&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="s2">&quot;user&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;TKtWbdzEq5ss9vTS9kwRhBp5mXmBfBns3E&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="s2">&quot;receiver&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;TEkj3ndMVEmFLYaFrATMwMjBRZ1EAZkucT&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="s2">&quot;value&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">100000</span><span class="p">,</span>
+<span class="w">  </span><span class="s2">&quot;maxFee&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">1000000</span><span class="p">,</span>
+<span class="w">  </span><span class="s2">&quot;deadline&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">1728638679</span><span class="p">,</span>
+<span class="w">  </span><span class="s2">&quot;version&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">1</span><span class="p">,</span>
+<span class="w">  </span><span class="s2">&quot;nonce&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">9</span><span class="p">,</span>
+<span class="w">  </span><span class="s2">&quot;sig&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;9dfd3638e03af56bc93fa619e20e1e743f6b5c0d9a49bd340a94e27f6d6a6413618cc8481b9d5816a793982d8047daa0badbade02f92814e78a9894efd9877341b&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+<ul>
+<li><strong>Return</strong>: basic information of this GasFree transfer authorization.<br />
+  Field description:</li>
+<li>id: traceId of GasFree transfer authorization, not the transactionId</li>
+<li>accountAddress: user's EOA address</li>
+<li>gasFreeAddress: user's GasFree account address</li>
+<li>providerAddress: address of the service-provider</li>
+<li>targetAddress: recipient address</li>
+<li>tokenAddress: contract address of the transferred token</li>
+<li>amount: amount of the transfer</li>
+<li>maxFee: limit of maximum fee</li>
+<li>signature: user's signature</li>
+<li>version: signature version of transfer authorization</li>
+<li>nonce: nonce value specified for the transfer</li>
+<li>expiredAt: expiration time of this transfer</li>
+<li>state: current state of this transfer, with the following values:<ul>
+<li>WAITING, // Not started</li>
+<li>INPROGRESS, // In progress</li>
+<li>CONFIRMING, //Confirming</li>
+<li>SUCCEED, // Successful</li>
+<li>FAILED, // Failed</li>
+</ul>
+</li>
+<li>estimatedActivateFee: estimated activation fee of the address</li>
+<li>estimatedTransferFee: estimated transfer fee</li>
+</ul>
+<p><strong>Return example:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="s2">&quot;code&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">200</span><span class="p">,</span>
+<span class="w">  </span><span class="s2">&quot;reasone&quot;</span><span class="o">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">  </span><span class="s2">&quot;message&quot;</span><span class="o">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">  </span><span class="s2">&quot;data&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="s2">&quot;id&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;6ab4c27c-f66b-4328-b40f-ffdc6cf1ca60&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;createdAt&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;2024-09-10T08:11:50.822+00:00&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;updatedAt&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;2024-09-10T08:11:50.822+00:00&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;accountAddress&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;TKtWbdzEq5ss9vTS9kwRhBp5mXmBfBns3E&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;gasFreeAddress&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;TLGVf7MRsLG7XxBkJKy8wnCVcDnAeXYNCb&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;providerAddress&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;TQ6qStrS2ZJ96gieZJC8AurTxwqJETmjfp&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;targetAddress&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;TQ6qStrS2ZJ96gieZJC8AurTxwqJETmjfp&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;tokenAddress&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;TXYZopYRdj2D9XRtbG411XZZ3kM5VkAeBf&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;amount&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">1000000</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;maxFee&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">1000000</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;signature&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;f5bb43b90a5295759819edb029a1c2d6cd50acc9bd4283fd73c4be16fe163d154ec4f06fd70c8d63cc2ff2346ea1c86abf019da944fb62eb28fe0a8f6e12e1931c&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;nonce&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">0</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;expiredAt&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;2024-09-11T08:05:08.000+00:00&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;state&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;WAITING&quot;</span><span class="p">,</span>
+<span class="s2">&quot;estimatedActivateFee&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">1000</span><span class="p">,</span>
+<span class="s2">&quot;estimateTransferFee&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">300</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<p><strong>Error example:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="s2">&quot;code&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">400</span><span class="p">,</span>
+<span class="w">  </span><span class="s2">&quot;reason&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;DeadlineExceededException&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="s2">&quot;message&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;deadline exceeded&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="s2">&quot;data&quot;</span><span class="o">:</span><span class="w"> </span><span class="kc">null</span>
+<span class="p">}</span>
+</code></pre></div>
+<ul>
+<li><strong>Error type</strong>s:</li>
+<li>ProviderAddressNotMatchException: Provider’s address does not match</li>
+<li>DeadlineExceededException: authorization is expired.</li>
+<li>InvalidSignatureException: signature is incorrect.</li>
+<li>UnsupportedTokenException: token transferred is not supported.</li>
+<li>TooManyPendingTransferException: there are too many pending transfer authorizations.</li>
+<li>VersionNotSupportedException gasfree: signature version of transfer authorization is not supported.</li>
+<li>NonceNotMatchException: nonce does not match.</li>
+<li>MaxFeeExceededException: estimated fee exceeds the limit of the maximum fee.</li>
+<li>InsufficientBalanceException: insufficient balance</li>
+</ul>
+<h4 id="_1"><a class="headerlink" href="#_1" title="Permanent link">&para;</a></h4>
+<h3 id="get-apiv1gasfreetraceid">GET /api/v1/gasfree/{traceId}<a class="headerlink" href="#get-apiv1gasfreetraceid" title="Permanent link">&para;</a></h3>
+<p>Query the details of a specified GasFree transfer authorization. <strong>All fields related to the transaction will be empty if the query is made either before the transfer authorization is submitted to the chain or the verification before submitting fails.</strong></p>
+<ul>
+<li><strong>Required parameters</strong>:</li>
+<li>traceId: id of the GasFree transfer authorization; a path parameter.</li>
+<li>
+<p><strong>Return</strong>: detailed info on the GasFree transfer authorization.</p>
+<div class="codehilite"><pre><span></span><code>   Field description:
+</code></pre></div>
+
+</li>
+<li>
+<p>id: traceId of the GasFree transfer authorization recorded, not the transactionId.</p>
+</li>
+<li>createdAt: creation time of the transfer authorization.</li>
+<li>accountAddress: user's EOA address.</li>
+<li>gasFreeAddress: user's GasFree account address.</li>
+<li>providerAddress: service-provider address.</li>
+<li>targetAddress: recipient address.</li>
+<li>nonce: nonce value of theGasFree transfer authorization.</li>
+<li>tokenAddress: contract address of the token transferred.</li>
+<li>amount: amount actually transferred to the recipient's address.</li>
+<li>expiredAt: expiration time of this transfer.</li>
+<li>state: current state of this transfer, with the following values:<ul>
+<li>WAITING, // Not started</li>
+<li>INPROGRESS, // In progress</li>
+<li>CONFIRMING, //Confirming</li>
+<li>SUCCEED, // Successful</li>
+<li>FAILED, // Failed</li>
+</ul>
+</li>
+<li>estimatedActivateFee: estimated activation fee.</li>
+<li>estimatedTransferFee: estimated transfer fee.</li>
+<li>estimatedTotalFee: estimated activation fee pulse estimated transfer fee.</li>
+<li>estimatedTotalCost: estimated amount that the user needs to pay, including the total fee and the transfer amount.</li>
+<li>txnHash: transactionId of the corresponding transaction on-chain.</li>
+<li>txnBlockNum: block height of the corresponding transaction on-chain.</li>
+<li>txnBlockTimestamp: timestamp of the block contains the corresponding transaction, in milliseconds.</li>
+<li>txnState: state of the corresponding on-chain transaction, with the following values:<ul>
+<li>INIT, // initial state</li>
+<li>NOT_ON_CHAIN, // Not on-chain</li>
+<li>ON_CHAIN, // On-chain, not solidified</li>
+<li>SOLIDITY, // Solidified</li>
+<li>ON_CHAIN_FAILED, // failed to be on-chain</li>
+</ul>
+</li>
+<li>txnActivateFee: actual activation fee consumed.</li>
+<li>txnTransferFee: actual transfer fee consumed.</li>
+<li>txnTotalFee: actual total fee consumed.</li>
+<li>txnAmount: actual transferred amount to the recipient address</li>
+<li>txnTotalCost: actual amount paid by the user, including the total fee and the transferred amount.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+    
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.sections", "toc.integrate", "search.highlight", "search.suggest", "content.code.annotate", "content.tooltips"], "search": "assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+    
+  </body>
+</html>
