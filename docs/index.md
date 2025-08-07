@@ -4,7 +4,7 @@
 
 GasFree aims to provide users with a TRC-20/ERC-20 transfer solution that does not require a native token to pay for transaction gas fees. It specifically includes four roles: GasFree accounts, Service-Providers, wallets, and users, as shown in Figure 1. below.
 
-![overview](https://raw.githubusercontent.com/gasfree/gasfree-docs/main/images/overview.png)
+![overview](https://raw.githubusercontent.com/gasoilfree/gasfree-docs/main/images/overview.jpg)
 
 **GasFree Account**: Generated according to a specific algorithm. Its permissions are controlled by the user's EOA (Externally Owned Account) address. The user can sign a signature to authorize GasFree transfer of this account.
 
